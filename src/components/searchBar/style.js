@@ -3,7 +3,7 @@ import { StyleSheet } from "react-native";
 const style = StyleSheet.create({
     
     containerSearch:{
-
+        marginTop: '5vh',
         flexDirection:'row',
         width: '90%',
         backgroundColor: 'white',

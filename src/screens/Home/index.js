@@ -17,7 +17,7 @@ export default function App() {
   return (
     <View style={style.container}>
       
-      <Header/>
+      {/* <Header/> */}
       <Search/>
       <BannerFilmes/>
 

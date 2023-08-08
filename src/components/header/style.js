@@ -5,7 +5,8 @@ const style = StyleSheet.create({
     container:{
         flex: 1,
         backgroundColor: '#141414',
-        alignItems: "center"
+        alignItems: "center",
+        paddingTop: '5vh'
     },
     viewHeader:{
         flexDirection: 'row',
