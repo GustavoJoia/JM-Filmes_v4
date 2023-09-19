@@ -4,11 +4,13 @@ const style = StyleSheet.create({
     container:{
         flex: 1,
         backgroundColor: '#141414',
-        alignItems: 'center'
+        alignItems: 'center',
+        overflow: 'scroll',
+        paddingBottom: '25px'
     },
     img:{
         width: '100vw',
-        height: '30vh'
+        height: '23vh'
     },
     title:{
         color: '#fff',
@@ -19,6 +21,15 @@ const style = StyleSheet.create({
         textAlign: 'center',
         width: '85%'
     },
+
+    overview:{
+        textAlign: "justify",
+        width: "75%",
+        fontSize: '18px',
+        color:'#fff',
+        fontWeight:'475',
+        paddingTop: '20px'
+    }
 })
 
 export default style

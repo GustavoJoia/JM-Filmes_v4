@@ -6,11 +6,12 @@ import { NavigationContainer, useNavigation } from "@react-navigation/native";
 export default function Card(filme){
 
     const Navigation = useNavigation();
+    //console.log(filme.imagem_horizontal)
 
     return(
 
         <TouchableOpacity style = {style.containerFilmes}
-            onPress={()=> Navigation.navigate('details',{titulo:filme.nome, nota:filme.nota, imagem:filme.imagem})}
+            onPress={()=> Navigation.navigate('details',{titulo:filme.nome, nota:filme.nota, imagem:filme.imagem,desc:filme.descricao,img_horizontal:filme.imagem_horizontal})}
         >
 
             <Image style = {style.imagemFilmes} source = {{uri:`https://image.tmdb.org/t/p/original/${filme.imagem}`}} />

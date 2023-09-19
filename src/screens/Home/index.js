@@ -1,13 +1,10 @@
 import { StyleSheet, Text, View, FlatList } from 'react-native';
 import style from '../../components/header/style';
 
-import Header from '../../components/header/index';
 import Search from '../../components/searchBar/index';
 import BannerFilmes from '../../components/bannerFilmes/index';
 import Card from '../../components/cardFilmes';
 
-import filmes from '../../data/movies';
-import series from '../../data/series';
 import titulo from '../../components/bannerFilmes/style';
 
 import React,{useState, useEffect} from 'react';
@@ -25,6 +22,7 @@ export default function App() {
         const response = await fetch('https://api.themoviedb.org/3/movie/popular?api_key=cb67daeb058ea76844b44ee194f97399&language=pt-BR');
         const data = await response.json();
         setMovies(data.results)
+        //console.log(data.results)
       } catch(error){
         console.error('QUEBROU TUDO MANO',error)
       }
@@ -42,6 +40,7 @@ export default function App() {
         const response = await fetch('https://api.themoviedb.org/3/tv/popular?api_key=cb67daeb058ea76844b44ee194f97399&language=pt-BR');
         const data = await response.json();
         setSeries(data.results)
+        console.log(data.results)
       } catch(error){
         console.error('QUEBROU TUDO MANO',error)
       }
@@ -74,6 +73,8 @@ export default function App() {
             nome = {item.title}
             nota = {item.vote_average}
             imagem = {item.poster_path}
+            descricao = {item.overview}
+            imagem_horizontal = {item.backdrop_path}
             
             />
 
@@ -96,6 +97,8 @@ export default function App() {
               nome = {item.name}
               nota = {item.vote_average}
               imagem = {item.poster_path}
+              descricao = {item.overview}
+              imagem_horizontal = {item.backdrop_path}
             
             />
 

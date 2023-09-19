@@ -1,13 +1,17 @@
 import React from 'react'
-import { createDrawerNavigator } from '@react-navigation/drawer'
+import { createDrawerNavigator, DrawerItem } from '@react-navigation/drawer'
 import { NavigationContainer } from '@react-navigation/native';
 import { Entypo } from '@expo/vector-icons';
 import Stack from './stack'
 import Home from '../screens/Home'
 import About from '../screens/About'
 
+import { TouchableOpacity } from 'react-native';
+
 export default function Draw(){
     const Drawer = createDrawerNavigator()
+
+
     return(
         <NavigationContainer>
             <Drawer.Navigator>
@@ -15,6 +19,16 @@ export default function Draw(){
                     name='home'
                     component={Stack}
                     options={{
+                        // headerLeft: ({ focused, size }) => (
+                        //     <TouchableOpacity onPress={ navigation.openDrawer}>
+                        //         <Entypo
+                        //         name={'menu'}
+                        //         size={24}
+                        //         color="#fff"
+                        //         style={{ marginLeft: 10 }}
+                        //         />
+                        //     </TouchableOpacity>
+                        // ),
                         headerTransparent: false,
                         headerTitle: 'JM Stream',
                         headerTitleStyle:{
@@ -26,7 +40,8 @@ export default function Draw(){
                         },
                         headerStyle:{
                             backgroundColor: 'rgb(20,20,20)',
-                        }
+                        },
+                        
                     }}
                 />
                 <Drawer.Screen
@@ -40,3 +55,4 @@ export default function Draw(){
         </NavigationContainer>
     )
 }
+
