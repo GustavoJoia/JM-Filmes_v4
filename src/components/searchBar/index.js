@@ -7,7 +7,7 @@ export default function SearchBar(){
     return(
 
         <View style = {style.containerSearch}>
-            <FontAwesome name="search" size={24} color="black" />
+            <FontAwesome name="search" size={24} color="black"/>
             <TextInput 
                 placeholder="Digite o filme desejado"
                 style = {style.inputSearch}

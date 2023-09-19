@@ -6,7 +6,9 @@ const style = StyleSheet.create({
         flex: 1,
         backgroundColor: '#141414',
         alignItems: "center",
-        paddingTop: '5vh'
+        justifyContent: "space-between",
+        paddingTop: '5vh',
+        overflow: 'scroll'
     },
     viewHeader:{
         flexDirection: 'row',
@@ -18,8 +20,7 @@ const style = StyleSheet.create({
         fontSize: 25,
         color: '#fff',
         fontWeight: 'bold',
-        marginRight: 20,
-        marginLeft: 225
+       
     }
 
 })

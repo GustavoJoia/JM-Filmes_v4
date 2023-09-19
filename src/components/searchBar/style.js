@@ -3,13 +3,12 @@ import { StyleSheet } from "react-native";
 const style = StyleSheet.create({
     
     containerSearch:{
-        marginTop: '5vh',
         flexDirection:'row',
         width: '90%',
         backgroundColor: 'white',
-        marginTop: 30,
         alignItems: 'center',
-        borderRadius: 3
+        borderRadius: 25,
+        paddingLeft: '15px'
     },
 
     inputSearch:{

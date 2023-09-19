@@ -12,10 +12,10 @@ export default function Details(){
 
     return(
         <View style={style.container}>
-            <Image style={style.img} source={require(`../../img/${data.imagem}`)} />
+            <Image style={style.img} source={{uri: `https://image.tmdb.org/t/p/original/${data.imagem}`}} />
             <Text style={style.title}>{data.titulo}</Text>
             <Stars
-                default={data.nota}
+                default={(data.nota/2)}
                 count={5}
                 half={true}
                 //starSize={[style.fullStar.size, style.fullStar.size]}

@@ -11,10 +11,10 @@ export default function Routes(){
     
     return(
             
-        <Stack.Navigator initialRouteName='home'>
+        <Stack.Navigator initialRouteName='initial'>
 
             <Stack.Screen
-                name="home" 
+                name="initial" 
                 component={Home}
                 options={{
                     title: 'Início',
@@ -40,6 +40,7 @@ export default function Routes(){
                             <AntDesign name="left" size={'1.5em'} color="#fff" />
                         </View>
                     )
+                    
                 }}
             />
         

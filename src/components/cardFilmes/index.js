@@ -13,7 +13,7 @@ export default function Card(filme){
             onPress={()=> Navigation.navigate('details',{titulo:filme.nome, nota:filme.nota, imagem:filme.imagem})}
         >
 
-            <Image style = {style.imagemFilmes} source = {require(`../../img/${filme.imagem}`)} />
+            <Image style = {style.imagemFilmes} source = {{uri:`https://image.tmdb.org/t/p/original/${filme.imagem}`}} />
             <Text style = {style.tituloFilmes} >{filme.nome}</Text>
             <Text style = {style.notaFilmes} >{filme.nota}</Text>
 
