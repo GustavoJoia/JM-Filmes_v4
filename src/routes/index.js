@@ -35,7 +35,6 @@ export default function Draw(){
                             color: '#fff',
                             fontSize: '1.8rem',
                             width: '100%',
-                            marginLeft: 180
                             
                         },
                         headerStyle:{

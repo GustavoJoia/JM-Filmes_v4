@@ -5,8 +5,8 @@ const style = StyleSheet.create({
         flex: 1,
         backgroundColor: '#141414',
         alignItems: 'center',
-        overflow: 'scroll',
-        paddingBottom: '25px'
+        paddingBottom: '25px',
+        overflow: 'scroll'
     },
     img:{
         width: '100vw',
